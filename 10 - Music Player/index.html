@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="contain">
+      <div class="music-player">
+        <nav>
+          <div class="circle">
+            <i class="fa-solid fa-angle-left"></i>
+          </div>
+          <div class="circle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+        <img src="media/thumbnail2.jpg" class="song-img" />
+        <h1>Pertama</h1>
+        <p>Reza</p>
+        <audio id="song1">
+          <source src="media/Reza - Pertama .mp3" type="audio/mpeg" />
+        </audio>
+        <input type="range" value="0" id="progress1" />
+        <div class="controls">
+          <div><i class="fa-solid fa-backward"></i></div>
+          <div onclick="playPause1()">
+            <i class="fa-solid fa-play" id="play-icon1"></i>
+          </div>
+          <div><i class="fa-solid fa-forward"></i></div>
+        </div>
+      </div>
+
+      <!-- <div class="music-player">
+        <nav>
+          <div class="circle">
+            <i class="fa-solid fa-angle-left"></i>
+          </div>
+          <div class="circle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+        <img src="media/thumbnail1.jpg" class="song-img" />
+        <h1>Badai Telah Berlalu</h1>
+        <p>Diskoria, laleilmanino, BCL</p>
+        <audio id="song2">
+          <source
+            src="media/Diskoria, laleilmanino, BCL - Badai Telah Berlalu.mp3"
+            type="audio/mpeg"
+          />
+        </audio>
+        <input type="range" value="0" id="progress2" />
+        <div class="controls">
+          <div><i class="fa-solid fa-backward"></i></div>
+          <div onclick="playPause2()">
+            <i class="fa-solid fa-play" id="play-icon2"></i>
+          </div>
+          <div><i class="fa-solid fa-forward"></i></div>
+        </div>
+      </div>
+
+      <div class="music-player">
+        <nav>
+          <div class="circle">
+            <i class="fa-solid fa-angle-left"></i>
+          </div>
+          <div class="circle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+        <img src="media/thumbnail3.jpg" class="song-img" />
+        <h1>Sampai Jadi Debu</h1>
+        <p>Banda Naira</p>
+        <audio id="song">
+          <source
+            src="media/Sampai Jadi Debu - Banda Naira.mp3"
+            type="audio/mpeg"
+          />
+        </audio>
+        <input type="range" value="0" id="progress" />
+        <div class="controls">
+          <div><i class="fa-solid fa-backward"></i></div>
+          <div onclick="playPause()">
+            <i class="fa-solid fa-play" id="play-icon"></i>
+          </div>
+          <div><i class="fa-solid fa-forward"></i></div>
+        </div>
+      </div> -->
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
